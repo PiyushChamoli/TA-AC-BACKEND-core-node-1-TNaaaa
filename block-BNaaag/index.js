@@ -1,8 +1,11 @@
-var fs = require('fs');
+var {readFile,readFileSync} = require('fs');
 
-fs.readFile('./content.md', (err,content) => {
+readFile('./content.md', (err,content) => {
     console.log(content.toString());
 })
+
+let content = readFileSync('./content.md', 'utf8');
+console.log(content);
 
 console.time('task1');
 for (let i=0;i<10000;i++) {
