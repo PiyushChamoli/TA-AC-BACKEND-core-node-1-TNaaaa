@@ -16,7 +16,7 @@ function handleRequest(req,res) {
         res.write('<h2>This is all about NodeJS</h2>');
         res.end();
     }else if ((req.method === 'POST') && (req.url === pathName)) {
-        res.writeHead(201,{'Content-Type':'text/json'});
+        res.writeHead(201,{'Content-Type':'application/json'});
         res.end(`{message: this is a post request}`);
     }
 }
