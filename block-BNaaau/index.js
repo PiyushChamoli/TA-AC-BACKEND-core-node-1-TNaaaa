@@ -40,13 +40,12 @@ server.listen(5566, () => {
     console.log('Server listening on port 5566');
 })
 
-// Question 5 - NOT WORKING
+// Question 5 
 
 var server = http.createServer(handleRequest);
 
 function handleRequest(req,res) {
-    res.setHeader('Content-Type','application/javascript')
-    res.end(req.headers);
+    res.end(JSON.stringify(req.headers));
 }
 
 server.listen(7000, () => {
@@ -98,7 +97,7 @@ var server = http.createServer(handleRequest);
 
 function handleRequest(req,res) {
     res.setHeader('Content-Type','application/json');
-    res.write(`{success: true, message: 'Welcome to Nodejs'}`);
+    res.write(JSON.stringify({success: true, message: 'Welcome to Nodejs'}));
     res.end();
 }
 
@@ -144,18 +143,13 @@ server.listen(2345, () => {
 })
 
 // Question 12
-
+var fs = require('fs');
 var server = http.createServer(handleRequest);
 
 function handleRequest(req,res) {
     if (req.method ==='GET' && req.url === '/users') {
         res.setHeader('Content-Type', 'text/html');
-        res.end(`
-        <form>
-            <input type="text" placeholder="name">
-            <input type="email" placeholder="email">
-        </form>
-        `);
+        fs.createReadStream('./form.html').pipe(res);
     }else if(req.method === 'POST' && req.url === '/users') {
         res.end('Posted for the second time');
     }
@@ -171,15 +165,14 @@ var url = require('url');
 var server = http.createServer(handleRequest);
 
 function handleRequest(req,res) {
-    let parsedURL = url.parse(req.url);
+    let parsedURL = url.parse(req.url,true);
     console.log('parsed' + parsedURL.pathname);
     console.log('notparsed' + req.url);
     res.setHeader('Content-Type','application/json');
-    res.end(parsedURL.query);
+    res.end(JSON.stringify(parsedURL.query));
 }
 
 server.listen(8181, () => {
     console.log('server listening on port 8181');
 })
 
-//xyz
