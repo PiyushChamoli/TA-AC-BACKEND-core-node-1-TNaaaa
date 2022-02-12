@@ -4,413 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/721dc3a700.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/stylesheets/style.css">
-    <title>Home | Checkpoint 3</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Fetching Data</title>
 </head>
 <body>
     <header>
-        <div class="up-header">
-            <div class="container flex">
-                <ul class="flex up-head-left">
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <p>65/A, 17th floor, Kings Land, New York</p>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <p>info@consulting.com</p>
-                    </li>
-                </ul>
-                <ul class="flex up-head-right">
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-google-plus-g"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="down-header">
-            <div class="container flex">
-                <a class="down-head-left" href="#">
-                    <img src="assets/media/logo/logo.png" alt="Logo">
-                </a>
-                <ul class="flex down-head-right">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="cases.html">Cases</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <li>
-                        <a class="btn" href="#">Contact Now</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <h1>Github User Finder</h1>
     </header>
     <main>
-        <!--Home Section One-->
-        <section class="home-section-one flex">
-            <div class="sub-container one-one">
-                <p>
-                    Welcome to buson
-                </p>
-                <h2>
-                    We help you <br> to grow your <br> business
-                </h2>
-                <a class="btn" href="#">Learn More</a>
+        <section class="container">
+            <input type="text" placeholder="Enter a github username">
+            <div class="user">
+                <img src="./assets/images/user.jpg" alt="" class="userPhoto">
+                <h3 class="userName">Ankit Kumar</h3>
+                <p class="userLink">@nnnkit</p>
             </div>
-        </section>
-        <!--Home Section Two-->
-        <section class="home-section-two padding">
-            <div class="sub-container flex">
-                <article class="home-col-1-3">
-                    <img src="assets/media/team/team_1.jpg" alt="team_1">
-                    <h3>
-                        Business Planning
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos distinctio sapiente 
-                        expedita.
-                    </p>
-                </article>
-                <article class="home-col-1-3">
-                    <img src="assets/media/team/team_2.jpg" alt="team_2">
-                    <h3>
-                        Financial Projections
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos distinctio sapiente 
-                        expedita.
-                    </p>
-                </article>
-                <article class="home-col-1-3 home-col-1-3-third">
-                    <h3>
-                        What we do for you
-                    </h3>
-                    <hr>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos distinctio sapiente.
-                    </p>
-                    <span>
-                        <a href="#">View Profile</a>
-                        <i class="fas fa-angle-double-right"></i>
-                    </span>
-                </article>
+            <div class="list flex">
+                <p>Followers</p>
+                <ul class="flex followers">
+                    <li>
+                        <img src="./assets/images/user.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./assets/images/user.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./assets/images/user.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./assets/images/user.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./assets/images/user.jpg" alt="">
+                    </li>
+                </ul>
             </div>
-        </section>
-        <!--Home Section Three-->
-        <section class="home-section-three padding">
-            <article class="sub-container ">
-                <figure class="">
-                    <img src="assets/media/team/wetrusted.jpg" alt="team_3">
-                </figure>
-                <div class="home-section-three-down">
-                    <h3>
-                        We are more trusted then 5000 clients
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, optio 
-                        consectetur quas suscipit tenetur eos nulla nobis. Adipisicing elit. Unde, optio 
-                        consectetur quas suscipit tenetur eos nulla nobis.
-                    </p>
-                    <a class="btn" href="#">Learn More</a>
-                </div>
-            </article>
-        </section>
-        <!--Home Section Four-->
-        <section class="home-section-four padding">
-            <div class="sub-container">
-                <h2>
-                    Our Services
-                </h2>
-                <div class="flex padding">
-                    <ul class="home-col-1-3">
-                        <li class="home-section-four-icon">
-                            <i class="fas fa-clipboard-list"></i>
+            <div class="list flex">
+                <p>Following</p>
+                <ul class="flex following">
+                        <li>
+                            <img src="./assets/images/user.jpg" alt="">
                         </li>
                         <li>
-                            <h3>Strategic Planning</h3>
+                            <img src="./assets/images/user.jpg" alt="">
                         </li>
                         <li>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos distinctio sapiente 
-                                expedita.</p>
-                        </li>
-                    </ul>
-                    <ul  class="home-col-1-3">
-                        <li class="home-section-four-icon">
-                            <i class="fas fa-book"></i>
+                            <img src="./assets/images/user.jpg" alt="">
                         </li>
                         <li>
-                            <h3>Trades & Stocks</h3>
+                            <img src="./assets/images/user.jpg" alt="">
                         </li>
                         <li>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos distinctio sapiente 
-                                expedita.</p>
+                            <img src="./assets/images/user.jpg" alt="">
                         </li>
-                    </ul>
-                    <ul  class="home-col-1-3">
-                        <li class="home-section-four-icon">
-                            <i class="fas fa-scroll"></i>
-                        </li>
-                        <li>
-                            <h3>Audit & Assurance</h3>
-                        </li>
-                        <li>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos distinctio sapiente 
-                                expedita.</p>
-                        </li>
-                    </ul>
-                </div>
-                <a class="btn2" href="#">More Services</a>
+                </ul>
             </div>
         </section>
-        <!--Home Section Five-->
-        <section class="home-section-five padding">
-            <div class="flex">
-                <div class="home-section-five-left col-1-2">
-                    <h2>
-                        Completed Cases
-                    </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus et 
-                        asperiores quae similique fugit blanditiis illo modi reiciendis quia minus.
-                    </p>
-                    <a class="btn2" href="#">See More</a>
-                </div>
-                <figure class="home-section-five-right">
-                    <img src="assets/media/cases/completed_case_2.png" alt="completed_case_2">
-                    <img src="assets/media/cases/completed_case_1.png" alt="completed_case_1">
-                    <img src="assets/media/cases/completed_case_2.png" alt="completed_case_2">
-                </figure>
+        <hr>
+        <section class="container">
+            <div class="cat">
+                <h2>Get Random Cat!</h2>
+                <img src="./assets/images/user.jpg" alt="" class="catImg">
             </div>
-        </section>
-        <!--Home Section Six-->
-        <section class="home-section-six padding">
-            <div class="sub-container flex">
-                <figure class="col-1-4 home-section-six-arrow">
-                    <i class="fas fa-chevron-left"></i>
-                </figure>
-                <div class="col-1-2 home-section-six-center">
-                    <img src="assets/media/testimonial/Homepage_testi.png" alt="testimonial">
-                    <q>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni laborum 
-                        recusandae voluptatibus ipsa aperiam velit, qui in totam.
-                    </q>
-                    <figure>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </figure>
-                    <p class="home-section-six-center-first">CLIFFORD FRAZIER</p>
-                    <p class="home-section-six-center-second">- Colorlib Themes</p>
-                </div>
-                <figure class="col-1-4 home-section-six-arrow">
-                    <i class="fas fa-chevron-right"></i>
-                </figure>
-            </div>
-        </section>
-        <!--Home Section Seven-->
-        <section class="home-section-seven padding">
-            <div class="sub-container">
-                <h2>
-                    Our Recent News
-                </h2>
-                <div class="flex">
-                    <article class="home-col-1-3">
-                        <img src="assets/media/recent/rcent_1.png" alt="rcent_1">
-                        <p>
-                            Business Planning
-                        </p>
-                        <h3>
-                            Amazing places to visit in summer
-                        </h3>
-                        <date>Nov 30, 2020</date>
-                    </article>
-                    <article class="home-col-1-3">
-                        <img src="assets/media/recent/rcent_2.png" alt="rcent_2">
-                        <p>
-                            Audit
-                        </p>
-                        <h3>
-                            Amazing places to visit in summer
-                        </h3>
-                        <date>Nov 30, 2020</date>
-                    </article>
-                    <article class="home-col-1-3">
-                        <img src="assets/media/recent/rcent_3.png" alt="rcent_3">
-                        <p>
-                            Business Planning
-                        </p>
-                        <h3>
-                            Amazing places to visit in summer
-                        </h3>
-                        <date>Nov 30, 2020</date>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <!--Home Section Eight-->
-        <section class="home-section-eight padding">
-            <div class="sub-container flex">
-                <div class="home-col-1-3">
-                    <h2>
-                        Request for call back
-                    </h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Temporibus, est! Ex vitae ut at. 
-                    </p>
-                </div>
-                <form class="flex-60" action="index.html" method="POST">
-                    <fieldset>
-                        <div class="flex">
-                            <input class="col-1-2 form-box" type="text" name="name" placeholder="Name">
-                            <input class="col-1-2 form-box" type="text" name="phone" placeholder="Phone">
-                        </div>
-                        <div class="flex">
-                            <select class="flex-60 form-box" name="Services">
-                                <option value="Service">Service</option>
-                                <option value="Service2">Service 2</option>
-                                <option value="Service3">Service 3</option>
-                            </select>
-                            <input class="flex-40 form-box form-btn" type="submit" value="Send">
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
+            <button class="catBtn">Get New Cat</button>
         </section>
     </main>
-    <footer class="footer">
-       <div class="sub-container">
-        <div class="flex padding">
-            <div class="home-col-1-3 footer-first">
-                <ul class="footer-first-up">
-                    <li>
-                        <img src="assets/media/logo/logo2_footer.png" alt="logo2_footer">
-                    </li>
-                    <li>
-                        <p>
-                            Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit.
-                        </p>
-                    </li>
-                </ul>
-                <ul class="flex footer-first-down">
-                    <li>
-                        <a href="#"><i class="fab fa-facebook-square"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-twitter-square"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-pinterest-square"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <ul class="col-1-4">
-                <li>
-                    <h3>Company</h3>
-                </li>
-                <li>
-                    <p>Home</p>
-                </li>
-                <li>
-                    <p>About Us</p>
-                </li>
-                <li>
-                    <p>Services</p>
-                </li>
-                <li>
-                    <p>Cases</p>
-                </li>
-                <li>
-                    <p>Contact Us</p>
-                </li>
-            </ul>
-            <ul class="col-1-4">
-                <li>
-                    <h3>Services</h3>
-                </li>
-                <li>
-                    <p>Commercial Cleaning</p>
-                </li>
-                <li>
-                    <p>Office Cleaning</p>
-                </li>
-                <li>
-                    <p>Building Cleaning</p>
-                </li>
-                <li>
-                    <p>Floor Cleaning</p>
-                </li>
-                <li>
-                    <p>Apartment Cleaning</p>
-                </li>
-            </ul>
-            <ul class="col-1-4">
-                <li>
-                    <h3>Get In Touch</h3>
-                </li>
-                <li>
-                    <p>152-515-5125</p>
-                </li>
-                <li>
-                    <p>demomail@mail.com</p>
-                </li>
-                <li>
-                    <p>New Orlens, USA</p>
-                </li>
-            </ul>
-        </div>
-        <hr>
-        <small>
-            Copyright &copy; 2020 All Rights Reserved | This template is made by ColorLib
-        </small>
-       </div>
-    </footer>
+    <!-- <script src="./assets/js/app.js"></script> -->
 </body>
 </html>
